@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <style>
         body {
-    background-color: #000000;
-    color: #FFFFFF;
+            background-color: #000000;
+            color: #FFFFFF;
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
@@ -27,9 +27,16 @@
         }
         
         .logo img {
-            max-width: 400px;
+            max-width: 500px;
             width: 100%;
             height: auto;
+            animation: flicker 4s infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 97%, 100% { opacity: 1; }
+            98% { opacity: 0.85; }
+            99% { opacity: 1; }
         }
         
         .notice {
@@ -58,9 +65,9 @@
         .footer {
             margin-top: 80px;
             padding-top: 20px;
-            border-top: 1px solid #CCCCCC;
+            border-top: 1px solid #333333;
             font-size: 11px;
-            color: #666666;
+            color: #999999;
         }
         
         .counter {
@@ -71,11 +78,12 @@
             font-size: 11px;
             display: inline-block;
             margin-top: 10px;
+            border: 1px solid #003300;
         }
         
         .best-viewed {
             font-size: 10px;
-            color: #999999;
+            color: #666666;
             margin-top: 15px;
         }
     </style>
@@ -85,7 +93,7 @@
     <div class="container">
         
         <div class="logo">
-            <img src="./images/XW.png" alt="XW Industries">
+            <img src="./images/XW_computer.png" alt="XW Industries">
         </div>
         
         <div class="notice">
@@ -97,7 +105,7 @@
         <div class="footer">
             Copyright &copy; 1997 XW Industries, Ltd. All Rights Reserved.<br>
             Last updated: January 15, 1997<br><br>
-            <span class="counter">Visitors: 999,999,999</span>
+            <span class="counter">Visitors: 999999999</span>
             <div class="best-viewed">
                 Best viewed in Netscape Navigator 3.0 at 800x600 resolution.
             </div>
